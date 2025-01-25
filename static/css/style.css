@@ -1,0 +1,70 @@
+.bg-nav{
+    background: #0d0d0d;
+    color:#686868;
+}
+.gen-bg{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #686868, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #686868, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:green
+}
+.text-main-color{
+    color:#686868;
+}
+.card-bg{
+    background: #0d0d0d;  /* fallback for old browsers */
+}
+.mt-10 {
+    margin-top: 10px !important;
+}
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #0d0d0d;
+}
+.text-div-center {
+  margin: auto !important;
+  width: 100% !important;
+  padding: 10px !important;
+  text-align: center !important;
+  white-space: nowrap;
+}
+.sm_font{
+    font-size: 1.2em !important;
+}
+
+.lg_font{
+    font-size: 1.8em !important;
+}
+
+.button_example{
+border:1px solid #B7B7B7;
+text-align: center;
+color: #FFFFFF;
+background-color: #D3D3D3;
+}
+
+.button_example:hover{
+border:1px solid #B7B7B7;
+text-align: center;
+color: #1f1f1f;
+background-color: #ffffff;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
