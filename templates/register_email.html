@@ -8,49 +8,40 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body class="gen-bg">
+  <body class="gen-bg">
     <nav class="navbar navbar-expand-lg bg-nav">
-        <div class="container-fluid">
-            <a class="navbar-brand" style="color:#a0a0a0" href="/">HRT Database</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-nav">
-              <li class="nav-item">
-                <a class="nav-link" style="color:#a0a0a0" href="/calc">Serial Number Search</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" style="color:#a0a0a0" href="/data">Data Upload</a>
-                </li>
-            </ul>
-            <form class="d-flex bg-nav" method="post" action="/logout">
-              <button class="btn btn-outline-success bg-nav" type="submit">Logout</button>
-            </form>
-          </div>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="/">HRT Database</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="/search">Serial Number Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/data">Data Upload</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8">
-                <h1 class="text-light display-4">This is the register portal for The HRT Database</h1>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body card-bg text-main-color">
-                        <form class="form" method="post" action="/register_act">
-                            <label>Email</label><br>
-                            <input type="email" class="form-control" name="sine"><br>
-                            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Submit">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-8">
+                  <h1 class="text-light display-4">This is the register portal for The HRT Database</h1>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <div class="card-body card-bg text-main-color">
+                          <form class="form" method="post" action="/register_act">
+                              <label>Email</label><br>
+                              <input type="email" class="form-control" name="sine"><br>
+                              <input type="submit" class="btn btn-primary btn-block btn-lg" value="Submit">
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>

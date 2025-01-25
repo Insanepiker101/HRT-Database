@@ -1,18 +1,18 @@
 .bg-nav{
-    background: #0d0d0d;
+    background: #cfcfcf;
     color:#686868;
 }
+
 .gen-bg{
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #686868, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #686868, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color:green
+    background: #abb4c0;  /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(#686868, #a8b2bf);  /* Chrome 10-25, Safari 5.1-6 */
+    background-image: radial-gradient(circle, #f3efee, #dfdfdf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .text-main-color{
-    color:#686868;
+    color:#888888;
 }
 .card-bg{
-    background: #0d0d0d;  /* fallback for old browsers */
+    background: #d3bfbf;;  /* fallback for old browsers */
 }
 .mt-10 {
     margin-top: 10px !important;
@@ -21,13 +21,10 @@
     margin-top: 50px !important;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #0d0d0d;
-}
 .text-div-center {
   margin: auto !important;
   width: 100% !important;
-  padding: 10px !important;
+  padding: 0px !important;
   text-align: center !important;
   white-space: nowrap;
 }
@@ -39,34 +36,37 @@
     font-size: 1.8em !important;
 }
 
-.button_example{
-border:1px solid #B7B7B7;
-text-align: center;
-color: #FFFFFF;
-background-color: #D3D3D3;
-}
-
-.button_example:hover{
-border:1px solid #B7B7B7;
-text-align: center;
-color: #1f1f1f;
-background-color: #ffffff;
-}
-
 .card {
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
     transition: 0.3s;
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  /* Add some padding inside the card container */
-  .container {
-    padding: 2px 16px;
-    max-width: 400px;
-    margin-top: 50px;
-  }
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.5);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  max-width: 400px;
+  margin-top: 50px;
+}
+
+.btn {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  background-color: #b4b4b4;
+  outline-color: #686868;
+  width: 65%;
+}
+
+.btn-primary:hover {
+    background-color: #979797 ;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.btn-primary:active {
+    background-color: #979797 ;
+}
+

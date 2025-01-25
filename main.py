@@ -7,12 +7,12 @@ from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy import Integer, String, select, LargeBinary, update
 from sqlalchemy.orm import Mapped, mapped_column
 import numpy as np
+import email_sending
 
 class Base(DeclarativeBase):
     pass
 
 db = SQLAlchemy(model_class=Base)
-
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
@@ -128,7 +128,6 @@ def register_act():
     return redirect('/')
 
 
-
 ## Route to create the user and too process that into the data base
 @app.route("/user/<int:id>")
 def user(id):
@@ -160,5 +159,3 @@ def create_user():
 if __name__ == '__main__':
     ## contex = ('/home/sarah/sambashare/Steel Weight Calculator/cert/fullchain.pem', '/home/sarah/sambashare/Steel Weight Calculator/cert/privkey.pem') ## ToDO Change fullchain.pem
     app.run(host="192.168.0.15", port=5001, debug=True)
-
-
