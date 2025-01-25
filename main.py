@@ -51,28 +51,28 @@ class steel_weights_data(db.Model):
 with app.app_context():
     db.create_all()
 
-## Base routes
 
+## Base routes
 @app.route("/")
 def home():
-    return render_template("home.html")
+    return redirect("/howto")
+
 
 @app.route('/logout', methods=['POST'])
 def logout():
     session.pop('username', None)
     return redirect('/')
 
+
 @app.route("/howto")
 def howto():
     return render_template("howto.html")
 
-## This is the template and the action to calculate the measures
 
-@app.route("/calc", methods=['POST', 'GET'])
-def calc():
-    return render_template("calc.html")
+@app.route("/search")
+def search():
+    return render_template("search.html")
 
-## This is the route and action to upload new data
 
 @app.route("/data/")
 def data():
@@ -81,8 +81,8 @@ def data():
     else:
         return redirect('/adminlogin')
 
-## Admin login to check if the admin is correct
 
+## Admin login to check if the admin is correct
 @app.route("/adminlogin")
 def login():
     return render_template("login.html")
@@ -103,20 +103,23 @@ def user_val():
             session['username'] = uname
             return redirect('/data')
 
+
 ## Stuff to send register email and to add that to the data base 
 @app.route('/register')
 def register():
     return render_template('register.html')
 
+
 @app.route('/register_email')
 def register_email():
     return render_template('register_email.html')
+
 
 @app.route("/register_act", methods=['POST'])
 def register_act():
     register_key = np.array2string(np.random.randint(9, size=12))
     email = request.form["sine"]
-    link = "https://steelweights.uk/register"
+    link = "https://hrtdatabase.uk/register"
     email_reg = Email_Key(
         register_key=register_key
     )
@@ -125,6 +128,7 @@ def register_act():
     email_sending.send_pass_reg(email, link, register_key)
     return redirect('/')
 ## Route to create the user and too process that into the data base
+
 
 @app.route("/user/<int:id>")
 def user(id):

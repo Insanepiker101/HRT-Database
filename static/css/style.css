@@ -67,4 +67,6 @@ background-color: #ffffff;
   /* Add some padding inside the card container */
   .container {
     padding: 2px 16px;
+    max-width: 400px;
+    margin-top: 50px;
   }
