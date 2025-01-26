@@ -116,4 +116,4 @@ def admin():
 ## Main function that handles the run fuction and the ssl context
 if __name__ == '__main__':
     ## contex = ('/home/sarah/sambashare/Steel Weight Calculator/cert/fullchain.pem', '/home/sarah/sambashare/Steel Weight Calculator/cert/privkey.pem') ## ToDO Change fullchain.pem
-    app.run(host="192.168.0.15", port=5001, debug=True)
+    app.run(host="localhost", port=5001, debug=True)
